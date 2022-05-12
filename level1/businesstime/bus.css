@@ -1,0 +1,51 @@
+body {
+    align-items: center;
+    box-sizing: border-box;
+    background-color: gray ;
+}
+.nav-bar {
+    position: fixed;
+    width: 100%;
+    margin: -100px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-left: 100px;
+}
+.about {
+    position: relative;
+    left: 150px;
+}
+.invest {
+    position: relative;
+    left: 315px;
+}
+#flex-container {
+    border: 1px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    margin: 100px 10px;
+    
+    
+}
+
+#flex-container > div:nth-child(1){
+    background-color: rgb(71, 71, 71);
+    height: flex;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+#flex-container > div:nth-child(2){
+    background-color: rgb(71, 71, 71);
+    height: flex;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+#flex-container > div:nth-child(3){
+    background-color: rgb(71, 71, 71);
+    height: flex;
+    margin: 0 10px;
+    padding: 10px;
+}

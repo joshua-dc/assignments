@@ -1,0 +1,141 @@
+body {
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+@media only screen and (min-width: 768px){
+    .grid {
+        display:flex;
+    }
+    
+    .square1 {
+        background-color: #F5C6D6;
+        width: 100%;
+        height: 100px;
+        margin: 5px;
+    }
+    
+    .square2 {
+        background-color: #EE2E84;
+        width: 100%;
+        height: 100px;
+        margin: 5px;
+    }
+    
+    .square3 {
+        background-color: #EE2E84;
+        width: 100%;
+        height: 100px;
+        margin: 5px;
+    }
+    
+    .square4 {
+        background-color: #EE2E84;
+        width: 100%;
+        height: 100px;
+        margin: 5px;
+    }
+    
+    .square5 {
+        background-color: #EE2E84;
+        width: 100%;
+        height: 100px;
+        margin: 5px;
+    }
+    
+    .square6 {
+        background-color: #85CFD8;
+        width: 100%;
+        height: 100px;
+        margin: 5px;
+    }
+    
+    .square7 {
+        background-color: #85CFD8;
+        width: 100%;
+        height: 100px;
+        margin: 5px;
+    }
+    
+    .square8 {
+        background-color: #8DC63F;
+        width: 100%;
+        height: 100px;
+        margin: 5px;
+    }
+    
+    .square9 {
+        background-color: #E76E34;
+        width: 50%;
+        height: 100px;
+        margin: 5px;
+    }
+    
+    }
+    
+    @media only screen and (max-width: 767px){
+        
+        .square1 {
+            background-color: #F5C6D6;
+            width: 100%;
+            height: 25px;
+            margin: 5px;
+        }
+        
+        .square2 {
+            background-color: #EE2E84;
+            width: 100%;
+            height: 25px;
+            margin: 5px;
+        }
+        
+        .square3 {
+            background-color: #EE2E84;
+            width: 100%;
+            height: 25px;
+            margin: 5px;
+        }
+        
+        .square4 {
+            background-color: #EE2E84;
+            width: 100%;
+            height: 25px;
+            margin: 5px;
+        }
+        
+        .square5 {
+            background-color: #EE2E84;
+            width: 100%;
+            height: 25px;
+            margin: 5px;
+        }
+        
+        .square6 {
+            background-color: #85CFD8;
+            width: 100%;
+            height: 25px;
+            margin: 5px;
+        }
+        
+        .square7 {
+            background-color: #85CFD8;
+            width: 100%;
+            height: 25px;
+            margin: 5px;
+        }
+        
+        .square8 {
+            background-color: #8DC63F;
+            width: 100%;
+            height: 25px;
+            margin: 5px;
+        }
+        
+        .square9 {
+            background-color: #E76E34;
+            width: 100%;
+            height: 25px;
+            margin: 5px;
+        }
+    }
