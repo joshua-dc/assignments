@@ -4,7 +4,7 @@ const playerName = readline.question("What be yer name? ");
     console.log("Unfortunately " + playerName + ", it seems that port key you used brought us into the Dark Forest...Let us get a move on it, too many creatures lurk about these woods...")
     
 
-    let bagInv = [];
+let bagInv = [];
 
 let enemies = [
     { name: 'A Basalisk', health: 200, item: 'Basalisk Fang', min: 25, max: 75  
@@ -71,31 +71,31 @@ function bossFight(enemy){
     while(bossHp > 0){
         let playerAtk = Math.floor(Math.random() * (enemy.max - enemy.min) + enemy.min);
         let bossAtk = Math.floor(Math.random() * (enemy.max - enemy.min) + enemy.min);
-            console.log(playerName + ' attacks for ' + playerAtk );
-            bossHp -= playerAtk;
-            console.log(enemy.name + " has " + bossHp + " hp left!");
-            readline.keyInPause();
-                if(bossHp < 1){
+        console.log(playerName + ' attacks for ' + playerAtk );
+        bossHp -= playerAtk;
+        console.log(enemy.name + " has " + bossHp + " hp left!");
+        readline.keyInPause();
+        if(bossHp < 1){
             console.log("You have defeated " + bossName);
             console.log(" You pulled " + enemy.item + " from " + enemy.name + ". Check yer bags!")
             bagInv.push(enemy.item)
-                health += 60;
-                console.log("You found a Potion off of " + enemy.name + " and gave you 60 HP")
-                enemies.splice(thisBoss, 1);
-                return;
-                }
-                console.log(bossName + ' HITS FOR ' + bossAtk);
-                health -= bossAtk;
-                console.log("Your hp is now " + health);
-            if(health < 0 ){
-                console.log("You have PERISHED... be sure to say Hello to Nearly Headless Nick :)")
-                break;
-            
-                
-            }
+            health += 60;
+            console.log("You found a Potion off of " + enemy.name + " and gave you 60 HP")
+            enemies.splice(thisBoss, 1);
+            return;
+        }
+        console.log(bossName + ' HITS FOR ' + bossAtk);
+        health -= bossAtk;
+        console.log("Your hp is now " + health);
+        if(health < 0 ){
+            console.log("You have PERISHED... be sure to say Hello to Nearly Headless Nick :)")
+            break;
+        
             
         }
+            
     }
+}
     
     
 function tryToRun(enemy){
