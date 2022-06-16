@@ -1,0 +1,36 @@
+{
+    "appetizers":{
+        "chili fries":{
+            "ingredients":[
+                "chili", "cheese", "bacon"
+            ],
+            "description": "home style chili cheese fries made with real cheese",
+            "price": "$3.99"
+        },
+        "chicken bacon ranch quesadillas":{
+            "ingredients":[
+                "chicken", "bacon", "ranch", "flour tortilla"
+            ],
+            "description": "mexican style quesadilla with bacon bits and our home made jalepeno sauce",
+            "price": "$7.99"
+        }
+        
+    },
+    "hot subs":{
+        "philly cheesesteak":{
+            "ingredients":[
+                "steak", "cheese", "green pepper", "onion", "mayo"
+            ],
+            "description": "old school philly cheese steak",
+            "price": "$9.99"
+        },
+        "chicken, bacon, ranch":{
+            "ingredients":[
+                "chicken, bacon, and ranch...>.>"
+            ],
+            "description": "its a chicken bacon and ranch dude...",
+            "price": "$11.99"
+
+        }
+    }
+}

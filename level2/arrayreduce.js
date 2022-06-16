@@ -7,14 +7,13 @@
 
 //  console.log(total([1,2,3])); // 6
 
-// function stringConcat(arr) {
-//     return arr.reduce((final, num) => {
-//         final.push(num[arr])
-//         return final
-//     },[])
-// }
-
-//  console.log(stringConcat([1,2,3])); // "123"
+function stringConcat(arr) {
+    return arr.reduce((final, num) => {
+        final.push(num[arr])
+        return final
+    },[])
+}
+console.log(stringConcat([1,2,3])); // "123"
 
 
 // function totalVotes(arr) {
@@ -79,51 +78,51 @@
 //  console.log(flatten(arrays)); // ["1", "2", "3", true, 4, 5, 6];
 
 
-var voters = [
-    {name:'Bob' , age: 30, voted: true},
-    {name:'Jake' , age: 32, voted: true},
-    {name:'Kate' , age: 25, voted: false},
-    {name:'Sam' , age: 20, voted: false},
-    {name:'Phil' , age: 21, voted: true},
-    {name:'Ed' , age:55, voted:true},
-    {name:'Tami' , age: 54, voted:true},
-    {name: 'Mary', age: 31, voted: false},
-    {name: 'Becky', age: 43, voted: false},
-    {name: 'Joey', age: 41, voted: true},
-    {name: 'Jeff', age: 30, voted: true},
-    {name: 'Zack', age: 19, voted: false}
-];
+// var voters = [
+//     {name:'Bob' , age: 30, voted: true},
+//     {name:'Jake' , age: 32, voted: true},
+//     {name:'Kate' , age: 25, voted: false},
+//     {name:'Sam' , age: 20, voted: false},
+//     {name:'Phil' , age: 21, voted: true},
+//     {name:'Ed' , age:55, voted:true},
+//     {name:'Tami' , age: 54, voted:true},
+//     {name: 'Mary', age: 31, voted: false},
+//     {name: 'Becky', age: 43, voted: false},
+//     {name: 'Joey', age: 41, voted: true},
+//     {name: 'Jeff', age: 30, voted: true},
+//     {name: 'Zack', age: 19, voted: false}
+// ];
 
-function voterResults(arr) {
-    return arr.reduce((final, voter) => {
-        if(voter.age >= 18 && voter.age <= 25){
-            final.youngPeople++
-            if(voter.voted){
-                final.youngVotes++
-            }
-        }
-        if(voter.age >= 26 && voter.age <= 35){
-            final.midsPeople++
-            if(voter.voted){
-                final.midVotes++
-            }
-        }
-        if(voter.age >= 36 && voter.age <= 55){
-            final.oldsPeople++
-            if(voter.voted){
-                final.oldVotes++
-            }
-        }
-        return final
-    }, { youngVotes: 0, youngPeople: 0, midVotes: 0, midsPeople: 0, oldVotes: 0, oldsPeople: 0})
-}
+// function voterResults(arr) {
+//     return arr.reduce((final, voter) => {
+//         if(voter.age >= 18 && voter.age <= 25){
+//             final.youngPeople++
+//             if(voter.voted){
+//                 final.youngVotes++
+//             }
+//         }
+//         if(voter.age >= 26 && voter.age <= 35){
+//             final.midsPeople++
+//             if(voter.voted){
+//                 final.midVotes++
+//             }
+//         }
+//         if(voter.age >= 36 && voter.age <= 55){
+//             final.oldsPeople++
+//             if(voter.voted){
+//                 final.oldVotes++
+//             }
+//         }
+//         return final
+//     }, { youngVotes: 0, youngPeople: 0, midVotes: 0, midsPeople: 0, oldVotes: 0, oldsPeople: 0})
+// }
 
         
         
         
         
 
-console.log(voterResults(voters)); // Returned value shown below:
+// console.log(voterResults(voters)); // Returned value shown below:
 /*
 { numYoungVotes: 1,
   numYoungPeople: 4,
@@ -133,3 +132,4 @@ console.log(voterResults(voters)); // Returned value shown below:
   numOldsPeople: 4
 }
 */
+
