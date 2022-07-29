@@ -1,13 +1,17 @@
 import React from "react"
 
+function clickMe(){
+    alert("you clicked me!");
+}
+
 export default function Navbar() {
     return (
         <div>
             <button className="butt1">
-                <div>Email</div>
+                Email
             </button>
-            <button className="butt2">
-                <div>LinkedIn</div>
+            <button onClick={clickMe} className="butt2">
+                LinkedIn
             </button>
         </div>
     )

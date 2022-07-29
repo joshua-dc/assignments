@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(157, 163, 168);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+input {
+  height: 30px;
+  width: 450px;
+  border-radius: 5px;
+  border: 2px grey solid;
+}
+button {
+  height: 35px;
+  width: 200px;
+  border-radius: 5px;
+  background-color: rgb(209, 136, 0);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  margin: 10px;
+}

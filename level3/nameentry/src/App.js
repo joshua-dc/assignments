@@ -1,0 +1,18 @@
+
+import React, {useState} from 'react';
+import List from './List.js';
+import Input from './Input';
+import Header from './Header';
+
+function App() {
+  const [list, setList] = useState(["", ""]);
+  return (
+    <div className="App">
+      <Header />
+      <Input setList={setList} list={list} />
+      <List list={list} />
+    </div>
+  );
+}
+
+export default App;
